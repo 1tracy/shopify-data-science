@@ -1,6 +1,8 @@
 # shopify-data-science
 Tracy Dong's Fall 2021 Shopify Data Science Intern Application
 
+The Python code I used to complete question 1 is in 'code for question 1.py', and 'Question Write Up. pdf' contains my answers to questions 1 and 2.
+
 ## Question 1A:
 Naively calculating an AOV of $3145 doesn't take into account the fact that
 multiple items can be bought in the same order. A more accurate AOV would be
