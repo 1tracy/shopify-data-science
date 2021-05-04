@@ -45,11 +45,11 @@ order by numproducts desc
 limit 1;
 SELECT ProductName FROM [Products] Where ProductID=31;
 
-By running the first command we find that the most popular product is product #31 with 5 products sold. We can break the first command down into the following steps:
-1/ SELECT CustomerID FROM Customers where Country = 'Germany’ selects the CustomerIDs of the customers whose country is Germany.
-2/ Select OrderID from Orders WHERE CustomerID in (...)finds the OrderIDs in the Orders table where the associated CustomerID is in the query outlined in step 1.
-3/ SELECT ProductID, count(ProductID) as numproducts FROM OrderDetails where OrderID in (...) selects and counts ProductID as numproducts in the OrderDetails table where the associated OrderID is in the query outlined in step 2. 
-4/ Group by ProductID order by numproducts desc limit 1; arranges and filters the results obtained in step 3 to display the ProductID of the most popular product.
+By running the first command we find that the most popular product is product #31 with 5 products sold. We can break the first command down into the following steps:  
+1/ SELECT CustomerID FROM Customers where Country = 'Germany’ selects the CustomerIDs of the customers whose country is Germany.  
+2/ Select OrderID from Orders WHERE CustomerID in (...)finds the OrderIDs in the Orders table where the associated CustomerID is in the query outlined in step 1.  
+3/ SELECT ProductID, count(ProductID) as numproducts FROM OrderDetails where OrderID in (...) selects and counts ProductID as numproducts in the OrderDetails table where the associated OrderID is in the query outlined in step 2.   
+4/ Group by ProductID order by numproducts desc limit 1; arranges and filters the results obtained in step 3 to display the ProductID of the most popular product.   
 Running the second command gives us the name of the product, Gorgonzola Telino.
 
 
